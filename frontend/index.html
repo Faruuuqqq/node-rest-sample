@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>University Management</h1>
+
+        <!-- Tab Navigation -->
+        <div class="tabs">
+            <button class="tab-link active" data-tab="students-tab">Students</button>
+            <button class="tab-link" data-tab="lecturers-tab">Lecturers</button>
+            <button class="tab-link" data-tab="teachers-tab">Teachers</button>
+        </div>
+
+        <!-- Students Section -->
+        <div id="students-tab" class="tab-content active">
+            <h2>Manage Students</h2>
+            <div class="form">
+                <input type="text" id="student-name" placeholder="Name">
+                <input type="number" id="student-age" placeholder="Age">
+                <input type="text" id="student-major" placeholder="Major">
+                <button id="add-student">Add Student</button>
+            </div>
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Major</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <!-- Lecturers Section -->
+        <div id="lecturers-tab" class="tab-content">
+            <h2>Manage Lecturers</h2>
+            <div class="form">
+                <input type="text" id="lecturer-name" placeholder="Name">
+                <input type="text" id="lecturer-department" placeholder="Department">
+                <input type="text" id="lecturer-specialization" placeholder="Specialization">
+                <button id="add-lecturer">Add Lecturer</button>
+            </div>
+            <table id="lecturer-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Specialization</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <!-- Teachers Section -->
+        <div id="teachers-tab" class="tab-content">
+            <h2>Manage Teachers</h2>
+            <div class="form">
+                <input type="text" id="teacher-name" placeholder="Name">
+                <input type="text" id="teacher-grade" placeholder="Grade">
+                <input type="text" id="teacher-subject" placeholder="Subject">
+                <button id="add-teacher">Add Teacher</button>
+            </div>
+            <table id="teacher-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Grade</th>
+                        <th>Subject</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

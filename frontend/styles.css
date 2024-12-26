@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form input {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead tr {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+button.delete, button.update {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background-color: #C70039;
+}
+
+button.update {
+    background-color: #28A745;
+}
+
+button.update:hover {
+    background-color: #218838;
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.tab-link.active {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
