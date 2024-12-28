@@ -17,6 +17,7 @@ router.get('/', (req, res) => {
 // Add a new lecturer
 router.post('/', (req, res) => {
     const { name, department } = req.body;
+    console.log(req);
 
     if (!name || !department) {
         return res.status(400).json({ error: 'Name and department are required.' });
